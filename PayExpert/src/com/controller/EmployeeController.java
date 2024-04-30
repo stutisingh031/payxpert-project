@@ -16,7 +16,7 @@ public class EmployeeController {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		EmployeeService employeeService = new EmployeeService();
-		
+		// our 1st project
 		while (true) {
 			System.out.println("1. view Performance");
 			System.out.println("2. View taxes");

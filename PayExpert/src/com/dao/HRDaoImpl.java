@@ -8,7 +8,7 @@ import com.dto.Employeedto;
 import com.dto.HrEmpDto;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
-import com.util.DBConnection;
+import com.utility.DBConnection;
 
 public class HRDaoImpl implements HRDao{
 
