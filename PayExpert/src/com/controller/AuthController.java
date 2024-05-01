@@ -1,7 +1,7 @@
 package com.controller;
 import java.sql.SQLException;
 import java.util.Scanner;
-import com.exceptions.InvalidCredentialsException;
+import com.exception.InvalidCredentialsException;
 import com.model.User;
 import com.service.UserService;
 

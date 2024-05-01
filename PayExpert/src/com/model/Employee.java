@@ -1,7 +1,7 @@
 package com.model;
 
 public class Employee {
-	private int employeeId;
+	private int employee_id;
 	private String name;
 	private String dateOfBirth;
     private String gender;
@@ -11,27 +11,12 @@ public class Employee {
     private String position;
     private String joiningDate;
     private String terminationDate;
-    private String userId;
-	public Employee(int employee_id, String name, String dateOfBirth, String gender, String email, String phoneNumber,
-			String address, String position, String joiningDate, String terminationDate, String userId) {
-		super();
-		this.employeeId = employee_id;
-		this.name = name;
-		this.dateOfBirth = dateOfBirth;
-		this.gender = gender;
-		this.email = email;
-		this.phoneNumber = phoneNumber;
-		this.address = address;
-		this.position = position;
-		this.joiningDate = joiningDate;
-		this.terminationDate = terminationDate;
-		this.userId = userId;
-	}
+    private String user_Id;
 	public int getEmployee_id() {
-		return employeeId;
+		return employee_id;
 	}
 	public void setEmployee_id(int employee_id) {
-		this.employeeId = employee_id;
+		this.employee_id = employee_id;
 	}
 	public String getName() {
 		return name;
@@ -87,11 +72,37 @@ public class Employee {
 	public void setTerminationDate(String terminationDate) {
 		this.terminationDate = terminationDate;
 	}
-	public String getUserId() {
-		return userId;
+	public String getUser_Id() {
+		return user_Id;
 	}
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUser_Id(String user_Id) {
+		this.user_Id = user_Id;
+	}
+	public Employee(int employee_id, String name, String dateOfBirth, String gender, String email, String phoneNumber,
+			String address, String position, String joiningDate, String terminationDate, String user_Id) {
+		super();
+		this.employee_id = employee_id;
+		this.name = name;
+		this.dateOfBirth = dateOfBirth;
+		this.gender = gender;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+		this.position = position;
+		this.joiningDate = joiningDate;
+		this.terminationDate = terminationDate;
+		this.user_Id = user_Id;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Employee [employee_id=" + employee_id + ", name=" + name + ", dateOfBirth=" + dateOfBirth + ", gender="
+				+ gender + ", email=" + email + ", phoneNumber=" + phoneNumber + ", address=" + address + ", position="
+				+ position + ", joiningDate=" + joiningDate + ", terminationDate=" + terminationDate + ", user_Id="
+				+ user_Id + "]";
 	}
 	
 	

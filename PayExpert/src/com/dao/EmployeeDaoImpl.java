@@ -56,9 +56,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			int presentDays = rst.getInt("present_days");
 			int absentDays = rst.getInt("absent_days");
 			String overtimePeriod = rst.getString("overtime_period");
-			double efficiency = rst.getDouble("efficiency");
-			Performance performance = new Performance(performanceId, presentDays, absentDays, overtimePeriod,
-					efficiency);
+			int efficiency = rst.getInt("efficiency");
+			int employee_id = rst.getInt("ëmployee_id");
+			Performance performance = new Performance(performanceId, presentDays, absentDays, overtimePeriod, efficiency,employee_id);
 			list.add(performance);
 		}
 		DBConnection.dbClose();
@@ -106,7 +106,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		pstmt.setString(8, employee.getPosition());
 		pstmt.setString(9, employee.getJoiningDate());
 		pstmt.setString(10, employee.getTerminationDate());
-		pstmt.setString(11, employee.getUserId());
+		pstmt.setString(11, employee.getUser_Id());
 		
 		int status = pstmt.executeUpdate(); 
 		DBConnection.dbClose();
