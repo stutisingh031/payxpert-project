@@ -1,7 +1,7 @@
 package com.controller;
 import java.sql.SQLException;
-import com.exceptions.InvalidInputException;
-import com.exceptions.TaxCalculationException;
+import com.exception.InvalidInputException;
+import com.exception.TaxCalculationException;
 import java.util.Scanner;
 import com.model.Tax;
 import com.dto.TaxDto;
