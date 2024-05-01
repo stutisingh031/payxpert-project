@@ -12,7 +12,7 @@ import com.model.Tax;
 public interface EmployeeDao {
 	
 	List<Tax>getAllTaxesByEmployeeId(int id) throws SQLException;
-	boolean findOne(int id)throws SQLException;
+	boolean findOne(double d)throws SQLException;
 	
 	List<Performance>getAllPerformanceByEmployeeId(int id) throws SQLException;
 	List<Payroll>getAllPayrollByEmployeeId(int id) throws SQLException;

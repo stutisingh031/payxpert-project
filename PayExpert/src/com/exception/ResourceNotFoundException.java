@@ -8,6 +8,8 @@ public class ResourceNotFoundException extends Exception {
 		this.message = message;
 	}
 
+	
+
 	public String getMessage() {
 		return message;
 	}
